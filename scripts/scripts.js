@@ -52,9 +52,13 @@ function changeModel() {
   if (modelName == "XYZ") {
     modelName = "CPRG";
     modelText.innerHTML = "Model CPRG";
+    // I added this line to change the duration text when the model is changed so that it does not show '0'
+    durationText.innerHTML = duration;
   } else if (modelName == "CPRG") {
     modelName = "XYZ";
     modelText.innerHTML = "Model XYZ";
+    // I added this line to change the duration text when the model is changed so that it does not show '0'
+    durationText.innerHTML = duration;
   }
   recalculate();
 }
